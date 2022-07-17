@@ -34,10 +34,10 @@ function draw(){
             document.getElementById("status").innerHTML = "Status: Objects Detected";
             fill("#fc0303");
             percent = floor(objects[i].confidence * 100);
-            text(objects[i].label + " " + percent + "%",objects[i].x - 800, objects[i].y - 520);
+            text(objects[i].label + " " + percent + "%",objects[i].x-100,objects[i].y-100);
             noFill();
             stroke("#fc0303");
-            rect(objects[i].x - 800, objects[i].y - 520, objects[i].width - 910, objects[i].height - 2640);
+            rect(objects[i].x-200,objects[i].y-200,objects[i].width-100,objects[i].height-100);
         }
     }
 }
